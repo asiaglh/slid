@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Доставка та оплата</title>
+    <meta content="Перша жива книга про війну на Сході України" name="description">
+    <link href="../assets/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="../styles/reset.css" rel="stylesheet">
+    <link href="../styles/styles.css" rel="stylesheet">
+    <link href="../styles/delivery-payment.css" rel="stylesheet">
+    <link href="../styles/pop-up.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container container">
+            <a class="header__logo" href="../index.html">Слiди на дорозi</a>
+            <div class="header__menu menu">
+                <div class="menu__icon">
+                    <span></span>
+                </div>
+                <div class="menu_wrapper">
+                    <nav class="menu__nav">
+                        <ul class="menu__list">
+                            <li>
+                                <a class="menu__item menu__item-mob" href="../index.html">Головна</a>
+                            </li>
+                            <li>
+                                <a class="menu__item" href="./about-author.html">Про автора та книгу</a>
+                            </li>
+                            <li>
+                                <a class="menu__item" href="./digital-book-format.html">Цифрові формати книги</a>
+                            </li>
+                            <li>
+                                <a class="menu__item" href="#">Доставка і оплата</a>
+                            </li>
+                            <li>
+                                <a class="menu__item" href="./contacs.html">Контакти</a>
+                            </li>
+                        </ul><button class="header__button btn header__button-dt"
+                            onclick="openPopUpForm()">Замовити</button>
+                    </nav>
+                </div>
+            </div><button class="header__button btn header__button-mob" onclick="openPopUpForm()">Замовити</button>
+        </div>
+    </header>
+    <main class="main delivery-main">
+        <section class="delivery">
+            <div class="container">
+                <div class="content__wrapper">
+                    <h2 class="delivery__title title">Доставка</h2>
+                    <div class="delivery__text text">
+                        <p>Посилка доставляється до діючого відділення або поштомата нової пошти у вашому населеному пункті. <br><br>
+                        Для отримання необхідно пред'явити документ підтверджуючий особу та номер накладної (сповіщення надійде на
+                            електронну
+                            пошту або з'явиться в мобільному додатку Нової пошти). Термін доставки — від 3 до 5 робочих днів. Вартість
+                            доставки –
+                            згідно з тарифами Нової пошти детальніше: <a href="https://novaposhta.ua/basic_tariffs"
+                                target="_blank">www.novaposhta.ua/basic_tariffs</a>. <br><br>
+                        Термін зберігання 7 календарних днів. День надходження відправлення у відділення Одержувача не рахується. <br><br>
+                        За зберігання із 8-го календарного нараховується доплата. Вартість залежить від терміну зберігання.</p>
+                        <p>Детальніше про зберігання: <a href="https://novaposhta.ua/zberigannia"
+                                target="_blank">www.novaposhta.ua/zberigannia</a></p>
+                        <p class="notes">УВАГА! Під час замовлення доставки Новою Поштою при виборі типу послуги «Склад-двері» оплата проводиться лише карткою</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="payment">
+            <div class="container">
+                <div class="content__wrapper">
+                    <h2 class="payment__title title">Оплата</h2>
+                    <div class="payment__text text">
+                        <div class="text__block">
+                            <h5>Готівкою при отриманні.</h5>
+                            <p>Ви можете оплатити замовлення при отриманні у відділенні нової пошти. </p>
+                        </div>
+                        <div class="text__block">
+                            <h5>Карткою онлайн</h5>
+                            <p>Оплату можна здійснити через Google Pay, Apple Pay, Visa Сhekout, MasterPass, Приват24 під час оформлення замовлення на
+                            сайті. </p>
+                        </div>
+                      
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="return">
+            <div class="container">
+                <div class="content__wrapper">
+                    <h2 class="return__title title">Повернення</h2>
+                    <div class="return__text text">
+                       <p>Відповідно до Постанови Кабінету Міністрів України від 19 березня 1994 р. №172, друковані видання належної якості обміну
+                    (поверненню) не підлягають.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__img"><img src="../assets/footer.svg"></div>
+        <div class="footer__container">
+            <div class="container">
+                <div class="footer__blocks">
+                    <div class="footer__block">
+                        <p class="footer__p">© 2023 Валерій Маркус</p><a class="footer__contract" href="./offer-contract.html"
+                            target="_blank">Договір оферти</a>
+                    </div>
+                    <div class="footer__block">
+                        <p class="footer__p">Приймаємо оплату</p>
+                        <div class="footer__flex">
+                            <a href="#" target="_blank"><img alt="visa" src="../assets/visa.svg"></a> <a href="#"
+                                target="_blank"><img alt="mastercard" src="../assets/mastercard.svg"></a>
+                        </div>
+                    </div>
+                    <div class="footer__block">
+                        <p class="footer__p">Соціальні мережі</p>
+                        <div class="footer__flex">
+                            <a href="#" target="_blank"><img alt="facebook" class="footer__social"
+                                    src="../assets/facebook.svg"></a> <a href="#" target="_blank"><img alt="instagram"
+                                    class="footer__social" src="../assets/instagram.svg"></a> <a href="#"
+                                target="_blank"><img alt="youtube" class="footer__social"
+                                    src="../assets/youtube.svg"></a> <a href="#" target="_blank"><img alt="telegram"
+                                    class="footer__social" src="../assets/telegram.svg"></a> <a href="#"
+                                target="_blank"><img alt="twitter" class="footer__social"
+                                    src="../assets/twitter.svg"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="pop-up"></div>
+    <script src="../js/burger-menu.js">
+    </script>
+    <script src="../js/script.js">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js">
+    </script>
+    <script src="../js/jquery.maskedinput.min.js">
+    </script>
+    <script src="../js/pop-up.js">
+    </script>
+</body>
+
+</html>

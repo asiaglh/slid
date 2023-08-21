@@ -1,0 +1,25 @@
+.excerpt__back {
+    background-image: url(../assets/back-arrow.svg);
+}
+.excerpt__title {
+    gap: 50px;
+    color: var(--color-primary);
+    font-family: 'Shlapak Script', cursive;
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+.excerpt__text {
+    margin-bottom: 54px;
+}
+.excerpt__text p {
+    font-size: 14px;
+}
+.excerpt__text p:not(:last-child) {
+    margin-bottom: 25px;
+}
+@media screen and (min-width: 1200px) {
+    .excerpt__title {
+        font-size: 96px;
+        margin-bottom: 60px;
+    }
+}

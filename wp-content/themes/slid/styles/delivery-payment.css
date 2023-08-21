@@ -1,0 +1,48 @@
+.delivery-main section {
+    padding: 30px 0 50px 0 !important;
+}
+.delivery-main .delivery {
+    padding-top: 7.5rem !important;
+}
+.delivery-main .title {
+    margin-bottom: 40px !important;
+}
+.delivery-main .text p, 
+.delivery-main .text a {
+    font-size: 14px;
+}
+
+.delivery-main .text p:not(:last-child){
+    margin-bottom: 25px;
+}
+.delivery-main .text a {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+.delivery-main .payment__text {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.delivery-main .notes {
+    font-size: 16px;
+}
+.delivery-main .text__block h5{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+    .delivery-main section {
+        padding: 50px 0 !important;
+        }
+    .delivery-main .title {
+        margin-bottom: 50px !important;
+    }
+    .delivery-main .text p:not(:last-child) {
+        margin-bottom: 50px;
+    }
+    .delivery-main .notes {
+        font-size: 20px;
+    }
+}

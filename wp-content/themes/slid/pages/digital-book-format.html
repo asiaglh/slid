@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Цифрові формати книги</title>
+    <meta content="Перша жива книга про війну на Сході України" name="description">
+    <link href="../assets/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="../styles/reset.css" rel="stylesheet">
+    <link href="../styles/styles.css" rel="stylesheet">
+    <link href="../styles/lightslider.css" rel="stylesheet">
+    <link href="../styles/digital-book-format.css" rel="stylesheet">
+    <link href="../styles/pop-up.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container container">
+            <a class="header__logo" href="../index.html">Слiди на дорозi</a>
+            <div class="header__menu menu">
+                <div class="menu__icon">
+                    <span></span>
+                </div>
+                <div class="menu_wrapper">
+                    <nav class="menu__nav">
+                        <ul class="menu__list">
+                            <li>
+                                <a class="menu__item menu__item-mob" href="../index.html">Головна</a>
+                            </li>
+                            <li>
+                                <a class="menu__item" href="./about-author.html">Про автора та книгу</a>
+                            </li>
+                            <li>
+                                <a class="menu__item" href="#">Цифрові формати книги</a>
+                            </li>
+                            <li>
+                                <a class="menu__item" href="./delivery-payment.html">Доставка і оплата</a>
+                            </li>
+                            <li>
+                                <a class="menu__item" href="./contacs.html">Контакти</a>
+                            </li>
+                        </ul><button class="header__button btn header__button-dt"
+                            onclick="openPopUpForm()">Замовити</button>
+                    </nav>
+                </div>
+            </div><button class="header__button btn header__button-mob" onclick="openPopUpForm()">Замовити</button>
+        </div>
+    </header>
+    <main class="main digital-main">
+        <section class="digital">
+            <div class="container">
+                <div class="content__wrapper">
+                    <h2 class="digital__title title">Цифрові формати книги</h2>
+                    <div class="digital__text">
+                        <p>Для поєднання тексту та цифрового контенту розроблено застосунок для Android та iOS, в якій зібрали ще більше унікальних
+                        відео- та фотоматеріалів з мого архіву. Тож сьогодні ви маєте змогу доторкнутись, послухати і прочитати з телефону чи
+                        планшету те, на що я витратив стільки фізичних і моральних сил.</p>
+                    </div>
+                </div>
+                <div class="digital__slider">
+                    <div class="digital__screenshots">
+                        <img class="digital__screenshot" src="../assets/android-1.jpg" alt="Скріншот книги цифрового формату">
+                        <img class="digital__screenshot" src="../assets/android-2.jpg" alt="Скріншот книги цифрового формату">
+                        <img class="digital__screenshot" src="../assets/android-3.jpg" alt="Скріншот книги цифрового формату">
+                        <img class="digital__screenshot" src="../assets/android-4.jpg" alt="Скріншот книги цифрового формату">
+                    </div>
+                </div>
+                <div class="content__wrapper">
+                    <div class="digital__flex">
+                        <div class="digital__text">
+                            <p>Завантажуй «Сліди на дорозі» прямо на ваш телефон або планшет на Android та iOS. Отримуйте застосунок, яким
+                                зручно
+                                користуватися, ще більше ексклюзивного контенту, який доповнює історію героя книги</p>
+                        </div>
+                        <div class="digital__payments">
+                            <img class="digital__payments-img" src="../assets/footprints.png" alt="Сліди">
+                            <div class="digital__block">
+                                <div class="digital__payment">
+                                    <p class="digital__payment-label">Для iOS</p>
+                                    <a class="digital__payment-ios payment-link"
+                                        href="https://apps.apple.com/ua/app/%D1%81%D0%BB%D1%96%D0%B4%D0%B8-%D0%BD%D0%B0-%D0%B4%D0%BE%D1%80%D0%BE%D0%B7i/id1640768016?l=uk"
+                                        target="_blank">
+                                        <img src="../assets/appstore.png" alt="appstore">
+                                    </a>
+                                </div>
+                                <div class="digital__payment">
+                                    <p class="digital__payment-label">Для Android</p>
+                                    <a class="digital__payment-android payment-link"
+                                        href="https://play.google.com/store/apps/details?id=ua.com.slid.slidy_na_dorozi" target="_blank">
+                                        <img src="../assets/googleplay.png" alt="googlepay">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="digital__text">
+                            <p>Окрім класичного паперового варіанту, та різних електронних форматах є аудіокнига, яку я озвучив для платформи
+                                АБУК.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+        <section class="audiobook">
+            <div class="container">
+                <div class="content__wrapper">
+                    <h2 class="audiobook__title title">Аудіокнига</h2>
+                </div>
+                <div class="audiobook__video video">
+                    <img class="video__thumbnail" src="../assets/digital-video.jpg" alt="Сліди ндорозі - Аудіокнига">
+                    <iframe class="video__iframe" src="https://www.youtube.com/embed/NjV6fhixCGo" title="Сліди на дорозі - Аудіокнига"
+                    frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+      </main>
+    <footer class="footer">
+        <div class="footer__img"><img src="../assets/footer.svg"></div>
+        <div class="footer__container">
+            <div class="container">
+                <div class="footer__blocks">
+                    <div class="footer__block">
+                        <p class="footer__p">© 2023 Валерій Маркус</p><a class="footer__contract" href="./offer-contract.html"
+                            target="_blank">Договір оферти</a>
+                    </div>
+                    <div class="footer__block">
+                        <p class="footer__p">Приймаємо оплату</p>
+                        <div class="footer__flex">
+                            <a href="#" target="_blank"><img alt="visa" src="../assets/visa.svg"></a> <a href="#"
+                                target="_blank"><img alt="mastercard" src="../assets/mastercard.svg"></a>
+                        </div>
+                    </div>
+                    <div class="footer__block">
+                        <p class="footer__p">Соціальні мережі</p>
+                        <div class="footer__flex">
+                            <a href="#" target="_blank"><img alt="facebook" class="footer__social"
+                                    src="../assets/facebook.svg"></a> <a href="#" target="_blank"><img alt="instagram"
+                                    class="footer__social" src="../assets/instagram.svg"></a> <a href="#"
+                                target="_blank"><img alt="youtube" class="footer__social"
+                                    src="../assets/youtube.svg"></a> <a href="#" target="_blank"><img alt="telegram"
+                                    class="footer__social" src="../assets/telegram.svg"></a> <a href="#"
+                                target="_blank"><img alt="twitter" class="footer__social"
+                                    src="../assets/twitter.svg"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="pop-up"></div>
+    <script src="../js/burger-menu.js">
+    </script>
+    <script src="../js/script.js">
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js">
+    </script>
+    <script src="../js/lightslider.js">
+    </script>
+    <script src="../js/digital-book-format.js">
+    </script>
+    <script src="../js/jquery.maskedinput.min.js">
+    </script>
+    <script src="../js/pop-up.js">
+    </script>
+</body>
+
+</html>

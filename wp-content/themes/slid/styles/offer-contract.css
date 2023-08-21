@@ -1,0 +1,24 @@
+.contract-main .title {
+    margin-bottom: 40px;
+}
+.contract__block {
+    margin-bottom: 40px;
+}
+.contract__block p {
+    font-size: 14px;
+}
+
+.contract__block p:not(:last-child){
+    margin-bottom: 40px;
+}
+.contract__subtitle {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+    .contract-main .title,
+    .contract__block p:not(:last-child){
+        margin-bottom: 50px;
+        }
+
+}

@@ -1,0 +1,32 @@
+.more__btn:before {
+    content: url(../assets/back-arrow.svg);
+}
+
+.excerpt{
+    margin-bottom: 0!important;
+}
+
+.excerpt__title {
+    gap: 50px;
+    color: var(--color-primary);
+    font-family: 'Shlapak Script', cursive;
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+.excerpt__text {
+    margin-bottom: 54px;
+}
+
+.excerpt .more__btn.top{
+    bottom: 40px;
+    position: relative;
+}
+.excerpt__text p:not(:last-child) {
+    margin-bottom: 25px;
+}
+@media screen and (min-width: 1200px) {
+    .excerpt__title {
+        font-size: 96px;
+        margin-bottom: 60px;
+    }
+}

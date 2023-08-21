@@ -1,0 +1,169 @@
+.digital-main section {
+    padding: 30px 0 50px 0 !important;
+}
+.digital-main .digital {
+    padding-top: 7.5rem !important;
+}
+.digital-main .title  {
+    margin-bottom: 50px;
+}
+.digital-main .digital__text p:not(:last-child){
+    margin-bottom: 40px;
+}
+.digital-main .digital__screenshots {
+    display: flex;
+    gap: 24px;
+}
+.digital-main .lSSlideOuter .digital__screenshots {
+    position: absolute;
+    top: 0;
+    left: 0;
+    gap: 0;
+    width: 100%;
+    }
+.digital-main .lSSlideOuter .digital__screenshot,
+.digital-main .lslide {
+    width: 264px !important;
+}
+.digital-main .digital__flex {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.digital-main .digital__payments {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.digital-main .digital__block {
+    display: flex;
+    gap: 20px;
+}
+.digital-main .digital__payments-img {
+    width: 100%;
+    max-width: 312px;
+    border-radius: 16px;
+}
+.digital-main .digital__payment {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.digital-main .payment-link img {
+    width: 100%;
+    min-width: 140px;
+    max-width: 180px;
+}
+.digital-main .digital__payment-label {
+    font-size: 20px;
+}
+.digital-main .lightSlider,
+.digital-main .lSSlideWrapper,
+.digital-main .lSSlideOuter,
+.digital-main .lightSlider {
+    overflow: unset !important;
+}
+.digital-main .digital__slider {
+    margin: 80px 0;
+}
+.digital-main .lSSlideWrapper {
+    max-width: unset;
+    position: relative;
+    height: 469px;
+    width: auto;
+    margin-bottom: 20px;
+}
+.digital-main .lSPager {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.digital-main .lSSlideOuter .lSPager.lSpg>li a {
+    display: none;
+    height: 0;
+}
+.digital-main .lSPager li {
+    width: 100%;
+    max-width: 63px;
+    height: 12px;
+    border-radius: 8px;
+    border: 3px solid #656565;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.digital-main .lSPager li.active {
+    border: 3px solid var(--color-primary);
+}
+@media screen and (min-width: 980px) {
+    .digital-main .digital__text,
+    .digital-main .digital__payments {
+        width: 80%;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .digital-main .digital__payments {
+        flex-direction: row;
+        gap: 80px;
+        align-items: center;
+        }
+    .digital-main .digital__payments-img {
+        max-width: 168px;
+    }
+    .digital-main .digital__screenshot {
+        width: 100%;
+        max-width: 264px;
+    }
+    .digital-main .digital__screenshots,
+    .digital-main .lSSlideOuter .digital__screenshots  {
+        position: static;
+    }
+    .digital-main .digital__screenshots {
+        gap: 24px;
+    }
+    .digital-main .lSSlideOuter .digital__screenshots {
+        gap: 0;
+    }
+    .digital-main .lSSlideWrapper {
+            height: 100%;
+        }
+    .digital-main .lSPager {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .digital-main section {
+        padding: 50px 0 !important;
+    }
+    .digital-main .title {
+         margin-bottom: 100px;
+    }
+    .digital-main .digital__text p:not(:last-child){
+        margin-bottom: 50px;
+    }
+    .digital-main .digital__flex {
+     gap: 50px;
+    }
+    .digital-main .digital__payment-label {
+        font-size: 24px;
+    }
+    .digital-main .audiobook__video {
+        max-width: 1128px !important;
+    }
+    .digital-main .digital__slider {
+        margin: 100px 0;
+    }
+    .digital-main .audiobook {
+        position: relative;
+    }
+    .digital-main .audiobook__title {
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        z-index: 9;
+    }
+    .digital-main .audiobook__title:before {
+        content: none;
+    }
+}

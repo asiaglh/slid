@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Доставка та оплата</title>
+    <meta content="Перша жива книга про війну на Сході України" name="description">
+    <link href="../assets/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="../styles/reset.css" rel="stylesheet">
+    <link href="../styles/styles.css" rel="stylesheet">
+    <link href="../styles/contacs.css" rel="stylesheet">
+    <link href="../styles/pop-up.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container container">
+            <a class="header__logo" href="../index.html">Слiди на дорозi</a>
+            <div class="header__menu menu">
+                <div class="menu__icon">
+                    <span></span>
+                </div>
+                <div class="menu_wrapper">
+                    <nav class="menu__nav">
+                        <ul class="menu__list">
+                            <li>
+                                <a class="menu__item menu__item-mob" href="../index.html">Головна</a>
+                            </li>
+                            <li>
+                                <a class="menu__item" href="./about-author.html">Про автора та книгу</a>
+                            </li>
+                            <li>
+                                <a class="menu__item" href="./digital-book-format.html">Цифрові формати книги</a>
+                            </li>
+                            <li>
+                                <a class="menu__item" href="./delivery-payment.html">Доставка і оплата</a>
+                            </li>
+                            <li>
+                                <a class="menu__item" href="#">Контакти</a>
+                            </li>
+                        </ul><button class="header__button btn header__button-dt"
+                            onclick="openPopUpForm()">Замовити</button>
+                    </nav>
+                </div>
+            </div><button class="header__button btn header__button-mob" onclick="openPopUpForm()">Замовити</button>
+        </div>
+    </header>
+    <main class="main">
+        <section class="contacts">
+            <div class="container">
+                <div class="content__wrapper">
+                    <h2 class="contacts__title title">Контакти</h2>
+                    <div class="contacts__info">
+                        <div class="contacts__row">
+                            <div class="contacts__column">
+                                <img class="contacts__icon" src="../assets/tel.svg" alt="phone">
+                                <a href="tel:+380960624503" class="contacts__label">+38 (096) 06-24-503</a>
+                            </div>
+                        </div>
+                        <div class="contacts__row">
+                            <div class="contacts__column">
+                                <img class="contacts__icon" src="../assets/mail.svg" alt="email">
+                                <a href="mailto:info@slid.com.ua" class="contacts__label">info@slid.com.ua</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts__social footer__flex">
+                        <a href="#" target="_blank"><img alt="facebook" class="footer__social"
+                                    src="../assets/facebook.svg"></a> <a href="#" target="_blank"><img alt="instagram"
+                                    class="footer__social" src="../assets/instagram.svg"></a> 
+                        <a href="#" target="_blank"><img alt="youtube" class="footer__social"
+                                    src="../assets/youtube.svg"></a> <a href="#" target="_blank"><img alt="telegram"
+                                    class="footer__social" src="../assets/telegram.svg"></a> 
+                        <a href="#" target="_blank"><img alt="twitter" class="footer__social"
+                                    src="../assets/twitter.svg"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="store">
+            <div class="container">
+                <div class="content__wrapper">
+                    <h2 class="store__title title">Продаж в магазинах</h2>
+                </div>
+                <div class="store__content">
+                    <div class="store__tabs">
+                        <div class="store__tabs-row">
+                            <div class="store__tab" data-tab="europe">Європа</div>
+                            <div class="store__tab" data-tab="canada">Канада</div>
+                        </div>
+                        <div class="store__tabs-row">
+                            <div class="store__tab active" data-tab="kyiv">Київ</div>
+                            <div class="store__tab" data-tab="lviv">Львів</div>
+                            <div class="store__tab" data-tab="dnipro">Дніпро</div>
+                            <div class="store__tab" data-tab="kharkiv">Харків</div>
+                            <div class="store__tab" data-tab="odesa">Одеса</div>
+                            <div class="store__tab" data-tab="ternopil">Тернопіль</div>
+                            <div class="store__tab" data-tab="ivano-frankivsk">Івано-Франківськ</div>
+                            <div class="store__tab" data-tab="vinnitsa">Вінниця</div>
+                            <div class="store__tab" data-tab="rivne">Рівне</div>
+                            <div class="store__tab" data-tab="khmelnytskyi">Хмельницький</div>
+                            <div class="store__tab" data-tab="lutsk">Луцьк</div>
+                            <div class="store__tab" data-tab="poltava">Полтава</div>
+                            <div class="store__tab" data-tab="sumy">Суми</div>
+                            <div class="store__tab" data-tab="zaporizhzhia">Запоріжжя</div>
+                            <div class="store__tab" data-tab="slavyansk">Слов’янськ</div>
+                            <div class="store__tab" data-tab="kropyvnytskyi">Кропивницький</div>
+                            <div class="store__tab" data-tab="chernihiv">Чернігів</div>
+                        </div>
+                    </div>
+                    <div class="store__info">
+                        <div class="store__block" data-block="europe">
+                            <h3 class="store__subtitle">Європа</h3></div>
+                        <div class="store__block" data-block="canada">
+                            <h3 class="store__subtitle">Канада</h3></div>
+                        <div class="store__block active" data-block="kyiv">
+                            <div class="store__section">
+                                <h3 class="store__subtitle">Київ</h3>
+                                <div class="store__contacts">
+                                    <div class="store__contact">
+                                        <p class="store__address">Петрівка, Книжковий ринок, 41 ряд місце 9/10</p>
+                                        <p class="store__open">Вт - Нд: 9:00 - 17:00, Пн - вихідний</p>
+                                        <div class="store__links">
+                                            <a href="tel:0679937234">(067) 993 72 34</a> /
+                                            <a href="#" target="_blank">На карті</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="store__section">
+                                <h3 class="store__subtitle">Мережа магазинів «Книгарні Є»</h3>
+                                <div class="store__contacts">
+                                <div class="store__contact">
+                                    <p class="store__address">вул. Лисенка, 3</p>
+                                    <p class="store__open">з 9:00 до 21:00, без вихідних</p>
+                                    <div class="store__links">
+                                        <a href="tel:0442358850">(044) 235-88-50</a> / 
+                                        <a href="#" target="_blank">На карті</a>
+                                    </div>
+                                </div>
+                                <div class="store__contact">
+                                    <p class="store__address">вул. В. Гетьмана, 1</p>
+                                    <p class="store__open">з 9:00 до 21:00, без вихідних</p>
+                                    <div class="store__links">
+                                        <a href="tel:0445945717">(044) 594-57-17</a> / 
+                                        <a href="#" target="_blank">На карті</a>
+                                    </div>
+                                </div>
+                                <div class="store__contact">
+                                    <p class="store__address">вул. Спаська, 5</p>
+                                    <p class="store__open">з 9:00 до 21:00, без вихідних</p>
+                                    <div class="store__links">
+                                        <a href="tel:0443511338">(044) 351-13-38</a> / 
+                                        <a href="#" target="_blank">На карті</a>
+                                    </div>
+                                </div>
+                                <div class="store__contact">
+                                    <p class="store__address">вул. Васильківська, 34</p>
+                                    <p class="store__open">з 9:00 до 21:00, без вихідних</p>
+                                    <div class="store__links">
+                                        <a href="tel:0445945718">(044) 594-57-18</a> / 
+                                        <a href="#" target="_blank">На карті</a>
+                                    </div>
+                                </div>
+                                <div class="store__contact">
+                                    <p class="store__address">просп. Повітрофлотський, 33/2</p>
+                                    <p class="store__open">з 9:00 до 21:00, без вихідних</p>
+                                    <div class="store__links">
+                                        <a href="tel:0442756742">(044) 275-67-42</a> / 
+                                        <a href="#" target="_blank">На карті</a>
+                                    </div>
+                                </div>
+                                <div class="store__contact">
+                                    <p class="store__address">вул. Хрещатик, 46</p>
+                                    <p class="store__open">з 9:00 до 21:00, без вихідних</p>
+                                    <div class="store__links">
+                                        <a href="tel:0443379772">(044) 337-97-72</a> / 
+                                        <a href="#" target="_blank">На карті</a>
+                                    </div>
+                                </div>
+                                <div class="store__contact">
+                                    <p class="store__address">вул. Льва Толстого, 1</p>
+                                    <p class="store__open">з 9:00 до 21:00, без вихідних</p>
+                                    <div class="store__links">
+                                        <a href="tel:0442358850">(044) 235-88-50</a> / 
+                                        <a href="#" target="_blank">На карті</a>
+                                    </div>
+                                </div>
+                                <div class="store__contact">
+                                    <p class="store__address">вул. А. Малишка, 2д</p>
+                                    <p class="store__open">з 9:00 до 21:00, без вихідних</p>
+                                    <div class="store__links">
+                                        <a href="tel:0443379771">(044) 337-97-71</a> / 
+                                        <a href="#" target="_blank">На карті</a>
+                                    </div>
+                                </div>
+                                <div class="store__contact">
+                                    <p class="store__address">б-р Лесі Українки, 24</p>
+                                    <p class="store__open">з 9:00 до 21:00, без вихідних</p>
+                                    <div class="store__links">
+                                        <a href="tel:0442850887">(044) 285-08-87</a> / 
+                                        <a href="#" target="_blank">На карті</a>
+                                    </div>
+                                </div>
+                                <div class="store__contact">
+                                    <p class="store__address">вул. Є. Сверстюка, 2а</p>
+                                    <p class="store__open">з 9:00 до 21:00, без вихідних</p>
+                                    <div class="store__links">
+                                        <a href="tel:0443383206">(044) 338-32-06</a> / 
+                                        <a href="#" target="_blank">На карті</a>
+                                    </div>
+                                </div>
+                                <div class="store__contact">
+                                    <p class="store__address">просп. М. Бажана, 16-Д</p>
+                                    <p class="store__open">з 9:00 до 21:00, без вихідних</p>
+                                    <div class="store__links">
+                                        <a href="tel:0443555916">(044) 355-59-16</a> / 
+                                        <a href="#" target="_blank">На карті</a>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="store__section">
+                                <h3 class="store__subtitle">Наш Формат</h3>
+                                <div class="store__contacts">
+                                <div class="store__contact">
+                                    <p class="store__address">пров. Алли Горської, 5</p>
+                                    <p class="store__open">Вт - Нд: 9:00 - 17:00, Пн - вихідний</p>
+                                    <div class="store__links">
+                                        <a href="tel:0442225349">(044) 222-53-49</a> <a href="tel:0672475737">(067) 247-57-37</a> / 
+                                        <a href="#" target="_blank">На карті</a>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="store__section">
+                                <h3 class="store__subtitle">Наш Формат</h3>
+                                <div class="store__contacts">
+                                <div class="store__contact">
+                                    <p class="store__address">вул. Антоновича, 176, 2 поверх (ТРЦ Ocean plaza)</p>
+                                    <div class="store__links">
+                                        <a href="#" target="_blank">На карті</a>
+                                    </div>
+                                </div>
+                                <div class="store__contact">
+                                    <p class="store__address">вул. Берковецька, буд. 6-Д, 1 поверх (ТРЦ Lavina Mall, біля Galaxy park)</p>
+                                    <div class="store__links">
+                                        <a href="#" target="_blank">На карті</a>
+                                    </div>
+                                </div>
+                                <div class="store__contact">
+                                    <p class="store__address">пр. Романа Шухевича, 2-Т, 3 поверх (ТРЦ SkyMall, біля Multiplex)</p>
+                                    <div class="store__links">
+                                        <a href="#" target="_blank">На карті</a>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="store__section">
+                                <h3 class="store__subtitle">Довженко. Книги. Кава. Кіно</h3>
+                                <div class="store__contacts">
+                                <div class="store__contact">
+                                    <p class="store__address">вулиця Бульварно-Кудрявська, 43</p>
+                                    <div class="store__links">
+                                        <a href="tel:0440503440646">(044) 050 344 0646</a> / 
+                                        <a href="#" target="_blank">На карті</a>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="store__section">
+                                <h3 class="store__subtitle">Моя книжкова полиця</h3>
+                                <div class="store__contacts">
+                                <div class="store__contact">
+                                    <p class="store__address">вулиця Пушкінська, 7 (Театральна / Золоті Ворота)</p>
+                                    <div class="store__links">
+                                        <a href="#" target="_blank">На карті</a>
+                                    </div>
+                                </div>
+                                <div class="store__contact">
+                                    <p class="store__address">вулиця Срібнокільська, 1А (Позняки)</p>
+                                    <div class="store__links">
+                                        <a href="#" target="_blank">На карті</a>
+                                    </div>
+                                </div>
+                                <div class="store__contact">
+                                    <p class="store__address">пл. Спортивна, 1-А, 4-й поверх (ТРЦ Gulliver)</p>
+                                    <div class="store__links">
+                                        <a href="#" target="_blank">На карті</a>
+                                    </div>
+                                </div>
+                                <div class="store__contact">
+                                    <p class="store__address">пл. Спортивна, 1-А, 4-й поверх (ТРЦ Gulliver)</p>
+                                    <p class="store__open">з 10.00 - 22.00, без вихідних</p>
+                                    <div class="store__links">
+                                        <a href="tel:0442272780">(044) 227 27 80</a> /
+                                        <a href="#" target="_blank">На карті</a>
+                                    </div>
+                                </div>
+                                <div class="store__contact">
+                                    <p class="store__address">ТЦ Навігатор: площа Слави (Арсенальна)</p>
+                                    <p class="store__open">з 9:00 до 21:00, без вихідних</p>
+                                    <div class="store__links">
+                                        <a href="tel:0445815204">(044) 581 52 04</a> /
+                                        <a href="#" target="_blank">На карті</a>
+                                    </div>
+                                </div>
+                                <div class="store__contact">
+                                    <p class="store__address">пр. Романа Шухевича, 2-Т, 3 поверх (ТРЦ SkyMall)</p>
+                                    <p class="store__open">з 9:00 до 21:00, без вихідних</p>
+                                    <div class="store__links">
+                                        <a href="tel:0442272780">(044) 227 27 80</a> /
+                                        <a href="#" target="_blank">На карті</a>
+                                    </div>
+                                </div>
+                                <div class="store__contact">
+                                    <p class="store__address">вул. Григорія Сковороди, 6 (Контрактова площа)</p>
+                                    <p class="store__open">з 9:00 до 21:00, без вихідних</p>
+                                    <div class="store__links">
+                                        <a href="tel:0442272780">(044) 227 27 80</a> /
+                                        <a href="#" target="_blank">На карті</a>
+                                    </div>
+                                </div>
+                                <div class="store__contact">
+                                    <p class="store__address">вул. Заболотного, 37, 2 поверх (ТРЦ Art Mall)</p>
+                                    <p class="store__open">з 9:00 до 21:00, без вихідних</p>
+                                    <div class="store__links">
+                                        <a href="tel:0442272780">(044) 227 27 80</a> /
+                                        <a href="#" target="_blank">На карті</a>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="store__block" data-block="lviv">
+                            <h3 class="store__subtitle">Львів</h3></div>
+                        <div class="store__block" data-block="dnipro">
+                            <h3 class="store__subtitle">Дніпро</h3></div>
+                        <div class="store__block" data-block="kharkiv">
+                            <h3 class="store__subtitle">Харків</h3></div>
+                        <div class="store__block" data-block="odesa">
+                            <h3 class="store__subtitle">Одеса</h3></div>
+                        <div class="store__block" data-block="ternopil">
+                            <h3 class="store__subtitle">Тернопіль</h3></div>
+                        <div class="store__block" data-block="ivano-frankivsk">
+                            <h3 class="store__subtitle">Івано-Франківськ</h3></div>
+                        <div class="store__block" data-block="vinnitsa">
+                            <h3 class="store__subtitle">Вінниця</h3></div>
+                        <div class="store__block" data-block="rivne">
+                            <h3 class="store__subtitle">Рівне</h3></div>
+                        <div class="store__block" data-block="khmelnytskyi">
+                            <h3 class="store__subtitle">Хмельницький</h3></div>
+                        <div class="store__block" data-block="lutsk">
+                            <h3 class="store__subtitle">Луцьк</h3></div>
+                        <div class="store__block" data-block="poltava">
+                            <h3 class="store__subtitle">Полтава</h3></div>
+                        <div class="store__block" data-block="sumy">
+                            <h3 class="store__subtitle">Суми</h3></div>
+                        <div class="store__block" data-block="zaporizhzhia">
+                            <h3 class="store__subtitle">Запоріжжя</h3></div>
+                        <div class="store__block" data-block="slavyansk">
+                            <h3 class="store__subtitle">Слов’янськ</h3></div>
+                        <div class="store__block" data-block="kropyvnytskyi">
+                            <h3 class="store__subtitle">Кропивницький</h3></div>
+                        <div class="store__block" data-block="chernihiv">
+                            <h3 class="store__subtitle">Чернігів</h3></div>
+                    </div>
+                      
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__img"><img src="../assets/footer.svg"></div>
+        <div class="footer__container">
+            <div class="container">
+                <div class="footer__blocks">
+                    <div class="footer__block">
+                        <p class="footer__p">© 2023 Валерій Маркус</p><a class="footer__contract" href="./offer-contract.html"
+                            target="_blank">Договір оферти</a>
+                    </div>
+                    <div class="footer__block">
+                        <p class="footer__p">Приймаємо оплату</p>
+                        <div class="footer__flex">
+                            <a href="#" target="_blank"><img alt="visa" src="../assets/visa.svg"></a> <a href="#"
+                                target="_blank"><img alt="mastercard" src="../assets/mastercard.svg"></a>
+                        </div>
+                    </div>
+                    <div class="footer__block">
+                        <p class="footer__p">Соціальні мережі</p>
+                        <div class="footer__flex">
+                            <a href="#" target="_blank"><img alt="facebook" class="footer__social"
+                                    src="../assets/facebook.svg"></a> <a href="#" target="_blank"><img alt="instagram"
+                                    class="footer__social" src="../assets/instagram.svg"></a> <a href="#"
+                                target="_blank"><img alt="youtube" class="footer__social"
+                                    src="../assets/youtube.svg"></a> <a href="#" target="_blank"><img alt="telegram"
+                                    class="footer__social" src="../assets/telegram.svg"></a> <a href="#"
+                                target="_blank"><img alt="twitter" class="footer__social"
+                                    src="../assets/twitter.svg"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="pop-up"></div>
+    <script src="../js/burger-menu.js">
+    </script>
+    <script src="../js/script.js">
+    </script>
+    <script src="../js/contacts.js">
+        </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js">
+    </script>
+    <script src="../js/jquery.maskedinput.min.js">
+    </script>
+    <script src="../js/pop-up.js">
+    </script>
+</body>
+
+</html>
